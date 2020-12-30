@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_explore"
+        android:title="Explore" />
+
+    <item
+        android:id="@+id/favorites"
+        android:icon="@drawable/ic_favorites"
+        android:title="Favorites" />
+
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/ic_search"
+        android:title="Search" />
+
+    <item
+        android:id="@+id/coupons"
+        android:icon="@drawable/ic_coupons"
+        android:title="Coupons" />
+    <fragment
+        android:id="@+id/First4Fragment"
+        android:name="com.example.agoto.First4Fragment"
+        tools:layout="@layout/fragment_first4"
+        android:label="@string/first_fragment_label">
+
+        <action
+            android:id="@+id/action_First4Fragment_to_Second4Fragment"
+            app:destination="@id/Second4Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/Second4Fragment"
+        android:name="com.example.agoto.Second4Fragment"
+        tools:layout="@layout/fragment_second4"
+        android:label="@string/second_fragment_label">
+
+        <action
+            android:id="@+id/action_Second4Fragment_to_First4Fragment"
+            app:destination="@id/First4Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/First5Fragment"
+        android:name="com.example.agoto.First5Fragment"
+        tools:layout="@layout/fragment_first5"
+        android:label="@string/first_fragment_label">
+
+        <action
+            android:id="@+id/action_First5Fragment_to_Second5Fragment"
+            app:destination="@id/Second5Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/Second5Fragment"
+        android:name="com.example.agoto.Second5Fragment"
+        tools:layout="@layout/fragment_second5"
+        android:label="@string/second_fragment_label">
+
+        <action
+            android:id="@+id/action_Second5Fragment_to_First5Fragment"
+            app:destination="@id/First5Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/First6Fragment"
+        android:name="com.example.agoto.First6Fragment"
+        tools:layout="@layout/fragment_first6"
+        android:label="@string/first_fragment_label">
+
+        <action
+            android:id="@+id/action_First6Fragment_to_Second6Fragment"
+            app:destination="@id/Second6Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/Second6Fragment"
+        android:name="com.example.agoto.Second6Fragment"
+        tools:layout="@layout/fragment_second6"
+        android:label="@string/second_fragment_label">
+
+        <action
+            android:id="@+id/action_Second6Fragment_to_First6Fragment"
+            app:destination="@id/First6Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.example.agoto.FirstFragment"
+        tools:layout="@layout/fragment_first"
+        android:label="@string/first_fragment_label">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="com.example.agoto.SecondFragment"
+        tools:layout="@layout/fragment_second"
+        android:label="@string/second_fragment_label">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+</menu>
